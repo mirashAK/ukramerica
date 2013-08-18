@@ -1,0 +1,153 @@
+/*
+        sizes.css
+        
+        Copyright 2010 Aleksandr <mirash@mirash-dell>
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+*/
+
+body,div,ul,li,h1,p,img {margin:0px ;padding:0px ; border:0px;}
+html, body {
+  width:100%;
+  height:100%;
+  /*overflow:auto;*/
+  min-height: 750px;
+  min-width: 905px;
+  
+  /*min-height: 100%; height: auto !important; height:100%; */
+}
+
+body  {font-family: Arial, Helvetica;}
+
+/*html{overflow-x: auto;} лечит баг оперы, когда она не видит min-height*/
+
+#wrapper {min-height:100%; position: relative; height: auto !important; height:100%; width:995px; margin-left: auto; margin-right: auto;}
+#mainHeader {width:995px; height:330px; position:absolute; top:0; left:0;}
+#header {width:995px; height:230px; position:absolute; top:0; left:0;}
+#footer {width:995px; height:57px; margin-top:-57px; position:relative; margin-left: auto; margin-right: auto; text-align:center;}
+#empty {height:57px; clear:both; display: block;}
+
+#mainContainer {padding: 350px 250px 0px 250px; height: auto !important; height:1%; position:relative;}
+
+#container {padding: 245px 250px 0px 250px; height: auto !important; height:1%; position:relative;}
+#catalogContainer {padding: 245px 10px 0px 250px; height: auto !important; height:1%; position:relative;}
+
+#content {width:100%; height: auto !important; height:1%;font-size: 9pt;}
+#left {position:absolute; top:240px; left: 0px; width:234px; height: auto !important; height:1%; padding-left:8px;padding-right:8px;}
+#right {position:absolute; top:240px; right: 0px; width:234px; height: auto !important; height:1%; padding-left:8px;padding-right:8px;}
+#mainLeft {position:absolute; top:350px; left: 0px; width:234px; height: auto !important; height:1%; padding-left:8px;padding-right:8px;}
+#mainRight {position:absolute; top:350px; right: 0px; width:234px; height: auto !important; height:1%; padding-left:8px;padding-right:8px;}
+
+.mainImage {height:201px;width:995px;display:block;}
+.centerImage {height:272px;width:495px;display:block;}
+.sizesImage {height:234px;width:495px;display:block;margin-bottom:190px;}
+.logoImage {top:140px;left:570px;height:56px;width:420px;position:absolute;}
+.smallImg {height:88px;width:234px;display:block;position:relative;}
+.imgHolder {position:relative;height:40px;width:300px;}
+.underConstrImage {height:316px;width:406px;display:block;margin-left:auto;margin-right:auto;margin-top:100px;margin-bottom:100px;}
+.aboutCont {float:left; width:45%; height: auto !important; height:100%; font-size: 9pt; padding: 10px;}
+.clearer {clear:both;}
+.spacer {overflow: hidden; height:6px;}
+.spacer3 {overflow: hidden; height:3px;}
+.spacerF {overflow: hidden; height:370px;}
+
+#srchResult {height:400px;}
+
+#footer .sign {width:auto; height:auto; position: absolute; right:3px; bottom:3px; font-size:8pt; font-weight:bold;}
+#footer a {font-size: 9pt;}
+#left a, #mainLeft a {font-size: 11pt; font-weight:bold;}
+#right a, #mainRight a {font-size: 11pt; font-weight:bold;} 
+.menuItem a, .menuItemOrder a {font-size: 11pt; font-weight:bold; text-decoration:none; /*font-style:italic; font-family:Georgia;*/}
+.menuItem, .menuItemOrder {float:left; height:26px;text-align:center; padding-top:4px;}
+.storyContainer {width:700px;}
+.storyItem {float:left;width:450px;}
+.imgItem {float:left;width:250px;height:88px;}
+.numList {list-style-type:decimal;margin-left:15px;}
+.letterList {list-style-type:lower-alpha;margin-left:25px;}
+.mainText {font-size: 11pt; text-align:center;} 
+.mainTextLeft {font-size: 11pt;} 
+.boldText {font-weight:bold;}
+.italicText {font-style:italic;}
+.contacts {font-size: 11pt; font-weight:bold;}
+.bookmarks {font-size: 11pt; font-weight:bold;}
+
+						/*Списки*/
+#menuList li {list-style-type:none; /*font-style:italic; font-family:Georgia;*/ 
+					height:27px;}
+#menuList a { text-decoration:none; width:175px; padding-left:45px; display:block;height:20px;padding-top:4px;}
+.storList li {list-style-type:none;position:relative;}
+
+#mainCategories li {list-style-type:none; /*font-style:italic; font-family:cursive*/height:27px;}
+#mainCategories a {text-decoration:none; padding-left:8px; width:220px; display:block; height:20px;padding-top:4px;}
+
+.popContainer {width: 234px; font-size: 8pt;}
+.nextBtn, .prevBtn {height:13px; width:25px; margin:10px}
+.btnHolder {width:100px;margin:0 auto;}
+.underline {width:600px;height:3px;margin-top:4px;margin-bottom:4px;}
+.smallUnderline {width:234px;height:3px;margin-top:4px;margin-bottom:4px;}
+
+#mhItemIframe {width:700px;height:370px;border-style:none;}
+
+.mainTextLeft h3, .mainTextLeft h2 {margin-bottom:1px;}
+.popCaption {margin-bottom:15px;margin-top:1px;font-family: Comic Sans MS;}
+.popHorCaption {margin-bottom:0px;margin-top:5px; font-family: Comic Sans MS; color:red; letter-spacing:2px;}
+
+.prevHorBtn, .nextHorBtn {height:25px; width:13px; margin:7px; margin-top:20px; float:left; }
+.popHorContainer {float:left; font-family: Comic Sans MS;}
+#horSpinHolder {height:90px; width:995px; font-size: 8pt; position:relative; left:-2000px; top:15px;}
+.discountSpan {position:absolute; top:90px; left:130px; font-size:34pt; font-weight:bold; color:red;}
+.smallDiscountSpan {position:absolute; top:45px; left:130px; font-size:34pt; font-weight:bold; color:red; z-index:999;}
+
+						/*Изображения*/
+.underwear1 {width:181px; height:103px; float:left; margin-right:10px;}
+.underwear2 {width:181px; height:120px; margin-right:10px;}
+.underwear3 {width:115px; height:262px; float:left; margin-right:30px; border: .75pt solid black; margin-bottom:30px;}
+.underwear4 {width:78px; height:167px; float:left; margin-right:30px; border: .75pt solid black;}
+
+
+						/*Оформление таблиц*/
+.sizesTable { border: .75pt solid black;  margin: 0 auto; text-align:left;}
+.leftCell-top {border-left-style: none; border-top-style: none; font-weight:bold;
+				border-right: 1.5pt solid black; border-bottom: 1.5pt solid black;}
+.rightCell-top {border-left-style: none;border-top-style: none; 
+				border-right: 1px solid #CCCCCC; border-bottom: 1.5pt solid black;}
+.leftCell {border-left-style: none; border-top-style: none; font-weight:bold;
+				border-right: 1.5pt solid black; border-bottom-style: none;}
+.rightCell {border-left-style: none;border-top-style: none; 
+				border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;}
+
+				
+						/*Закладки*/
+				
+/* скрываем текст внутри пунктов списка */
+.bkmz ul li span {display:none;}
+
+/* пункты спикса - в одну строку с промежутками по 10 пикселей */
+.bkmz ul li {list-style:none; float:left; margin-left:7px;}
+
+/* делаем ссылки блоками определенных размеров, задаем фоновую картинку */
+.bkmz ul li a {padding:0; display:block; height:16px; width:16px; background:url(../img/bookmarks/ico-bkms.gif) top left;}
+
+/* задаем смещение фоновой картинки для каждого пункта списка */
+.bkmz ul li a.yandex {background-position:-16px 0;}
+.bkmz ul li a.bobr {background-position:-32px 0;}
+.bkmz ul li a.memori {background-position:-48px 0;}
+.bkmz ul li a.moemesto {background-position:-64px 0;}
+.bkmz ul li a.linkstore {background-position:-80px 0;}
+.bkmz ul li a.rumarkz {background-position:-96px 0;}
+.bkmz ul li a.stozakl {background-position:-112px 0;}
+.bkmz ul li a.delicous {background-position:-128px 0;}
+.bkmz ul li a.techno {background-position:-144px 0;}

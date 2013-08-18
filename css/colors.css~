@@ -1,0 +1,54 @@
+/*
+        sizes.css
+        
+        Copyright 2010 Aleksandr <mirash@mirash-dell>
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+*/
+
+body {background:#F9F9F9 /*url('../img/background.gif')*/ ; background-attachment: fixed; }/*#F5F5DC  url(../img/star_s.jpg)*/
+#wrapper {background: #F9F9F9}
+#empty {}
+#header {}
+#footer {}
+#catalogContainer {}
+#content {}
+#left {}
+#right {}
+.imgHolder {}
+.storyItem {}
+
+.artg {color:#f3a817;}
+#left a, #mainLeft a {color: black;} 
+#right a, #mainRight a {color: black;}
+.menuItem:hover, .menuItemOrder:hover {background: #666a73;}/*75768b*/
+.menuItem {background: black;}
+.menuItemOrder {background: red;}
+.menuItem a, .menuItemOrder a{color:white;}
+/*#mainCategories a:hover {color:white;}*/
+#mainCategories li:hover a {color:white;}
+#mainCategories li:hover {background: url(/img/back1.gif) no-repeat;}
+#menuList li:hover a {color:white;}
+#menuList li:hover {background: url(/img/back2.gif) no-repeat;}
+#selectedRightItem a {color:white;}
+#selectedRightItem {background: url(/img/back2.gif) no-repeat;}
+#selectedLeftItem a {color:white;}
+#selectedLeftItem {background: url(/img/back1.gif) no-repeat;}
+
+.leftCell-top {background-color: #c0cfd7;}
+.rightCell-top {background-color: white;}
+.leftCell {background-color: #c0cfd7;}
+.rightCell {background-color: white;}
