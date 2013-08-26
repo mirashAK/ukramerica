@@ -1,8 +1,0 @@
-<div class="menuItemOrder" style="width:180px;"><a href="order.php" rel="nofollow">Сделать заказ</a></div>
-<div class="menuItem" style="width:110px;"><a href="{site}">Главная</a></div>
-<div class="menuItem" style="width:100px;"><a href="discounts.php">Скидки !</a></div>
-<div class="menuItem" style="width:122px;"><a href="popular.php">Популярные</a></div>
-<div class="menuItem" style="width:120px;"><a href="conditions.php">Условия</a></div>
-<div class="menuItem" style="width:80px;"><a href="search.php">Поиск</a></div>
-<div class="menuItem" style="width:181px;"><a href="sizes.php">Таблицы размеров</a></div>
-<div class="menuItem" style="width:100px;"><a href="contacts.php">Контакты</a></div>
