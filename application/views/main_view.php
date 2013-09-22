@@ -10,19 +10,21 @@
     <title>Enotus - {site_title}</title>
     <meta name="description" content="{site_metadata_description}" />
     <meta name="keywords" content="{site_metadata_keywords}" />
-
-    <!-- helpers [ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!--[if lt IE 9]>
-        <script src="{res_js}/vendor/html5shiv.js"></script>
-    <![endif]-->
-    <!-- ] helpers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <!-- css [ -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{res_css}/main.css" media="all">
     <!-- ] css -->
+    
+    <link rel="stylesheet" href="{res_css}/bootstrap.css" media="screen">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/bootstrap/assets/js/html5shiv.js"></script>
+      <script src="../bower_components/bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
     
   </head>
 
@@ -46,14 +48,10 @@
       {site_footer} 
       
         <!-- js [ -->
-        <script type="text/javascript">var BASEURL = '{base_url}'; var SUBURL = '{sub_url}'; var LANG = '{language}'; var BASEURLLANG = '{res_url}/{language}/';</script>
+        <script type="text/javascript">var BASEURL = '{base_url}'; var SUBURL = '{sub_url}'; var LANG = '{lang}'; var BASEURLLANG = '{res_url}/{lang}/';</script>
         <script type="text/javascript" src="{res_js}/vendor/jquery.min.js"></script>
-        <script type="text/javascript" src="{res_js}/plugins.js"></script>
+        <script type="text/javascript" src="{res_js}/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="{res_js}/main.js"></script>
-
-        <script>
-            $('#deal-country').select2();
-        </script>
         <!-- ] js -->
     </body>
 </html>

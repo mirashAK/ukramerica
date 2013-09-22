@@ -19,12 +19,13 @@ class Bootstrap_Test extends Test_Controller {
     
     $this->view_data['site_header'] = '';
     $this->view_data['site_footer'] =  '';
-    $this->view_data['site_body'] = '';
     $this->view_data['breadcrumbs'] = '';
     
     $this->view_data['res_js'] = res_url('assets/js/');
     $this->view_data['res_css'] = res_url('assets/css/');
     $this->view_data['res_img'] = res_url('assets/img/');
+    
+    $this->view_data['site_body'] = $this->parse_in('layouts/testing/bootstrap_view');
     
     $this->parse_out('main_view');
 	}
