@@ -10,6 +10,7 @@ class Main extends Front_Controller
   
   public function index()
   {
+    $this->view_data['site_header'] = $this->parse_in('layouts/common/header_img_view');
   
     $this->parse_out('main_view');
   }
