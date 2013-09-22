@@ -38,8 +38,21 @@
 |
 */
 
-$route['default_controller'] = "welcome";
-$route['404_override'] = '';
+$route['default_controller'] = "main";
+// $route['404_override'] = '';
+
+$route['testing/(:any)'] = "testing/$1";
+// 
+// $route['auth'] = "auth";
+// $route['auth/(:any)'] = 'auth/$1';
+// 
+// $route['user'] = "user";
+// $route['user/(:any)'] = 'user/$1';
+// 
+// $route['testing/(:any)'] = 'testing/$1';
+// 
+$route['home'] = "main";
+$route['(:any)'] = 'main/$1';
 
 
 /* End of file routes.php */

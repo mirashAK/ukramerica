@@ -49,10 +49,10 @@ $autoload['packages'] = array();
 |
 | Prototype:
 |
-|	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
+|   $autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('parser','email');
 
 
 /*
@@ -61,10 +61,10 @@ $autoload['libraries'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['helper'] = array('url', 'file');
+|   $autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array();
+$autoload['helper'] = array('common_helper', 'url');
 
 
 /*
@@ -73,14 +73,14 @@ $autoload['helper'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['config'] = array('config1', 'config2');
+|   $autoload['config'] = array('config1', 'config2');
 |
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
 |
 */
 
-$autoload['config'] = array();
+$autoload['config'] = array('languages');
 
 
 /*

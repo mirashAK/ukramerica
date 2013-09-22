@@ -9,7 +9,7 @@
 | Rest of symbols will add custom method
 |
 */
-$config['base_url'] = 'enotus.loc';
+$config['base_url'] = 'ukramerica.loc';
 $config['sub_domain'] = FALSE;
 
 /*

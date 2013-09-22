@@ -1,16 +1,14 @@
-# Запуск Реврайт
-RewriteEngine On
-# Базовый каталог
+<IfModule mod_rewrite.c>
+RewriteEngine on
 RewriteBase /
-# Не файл
+RewriteCond $1 !^(index\.php|uploads|robots\.txt|favicon\.ico)
 RewriteCond %{REQUEST_FILENAME} !-f
-# Не каталог
 RewriteCond %{REQUEST_FILENAME} !-d
-# Не статика
-RewriteCond %{REQUEST_FILENAME} !\.(jp(e?)g|gif|png|css|js|ico)$ [NC]
-# Строка запроса содержит имя каталога
-RewriteCond %{REQUEST_URI} ([A-Za-z]+)/(.*)$ [NC]
-# Каталог из предыдущего правила существует
-RewriteCond %{DOCUMENT_ROOT}/%1 -d
-# Реврайт на индексный файл в каталоге
-RewriteRule ^([A-Za-z]+)/(.*)$ $1/index.php/$2 [NC,L,QSA]
+RewriteRule . /index.php [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+    
+    # Without mod_rewrite, route 404's to the front controller
+    ErrorDocument 404 /index.php
+ 
+</IfModule>
