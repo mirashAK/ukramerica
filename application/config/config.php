@@ -5,16 +5,12 @@
 | Base Site URL
 |--------------------------------------------------------------------------
 |
-| URL to your CodeIgniter root. Typically this will be your base URL,
-| WITH a trailing slash:
-|
-|	http://example.com/
-|
-| If this is not set then CodeIgniter will guess the protocol, domain and
-| path to your installation.
+| Will point only to base name, without http:// or slashes
+| Rest of symbols will add custom method
 |
 */
-$config['base_url']	= '';
+$config['base_url'] = 'enotus.loc';
+$config['sub_domain'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +22,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +65,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'en';
 
 /*
 |--------------------------------------------------------------------------
@@ -106,7 +102,7 @@ $config['enable_hooks'] = FALSE;
 | http://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'MY_';
+$config['subclass_prefix'] = 'Flx_';
 
 
 /*
@@ -224,7 +220,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'IWr0VU8z6I';
 
 /*
 |--------------------------------------------------------------------------

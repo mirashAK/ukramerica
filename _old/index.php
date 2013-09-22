@@ -40,15 +40,15 @@ $TQ = new TmhQuery ($ukamConfig_user,$ukamConfig_password,$ukamConfig_dbName,"ut
 	<meta name="description" content="Титульная страница каталога американских магазинов. Продажа товаров популярных магазинов Америки с доставкой по Украине." />
 	<link rel = "icon" href = "favicon.ico" type = "image/x-icon" />
 	<link rel = "shortcut icon" href = "favicon.ico" type = "image/x-icon" /> 
-	<link rel="stylesheet" type="text/css" href="<?php echo($ukamConfig_live_site) ?>/css/sizes.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo($ukamConfig_live_site) ?>/css/colors.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo($ukamConfig_live_site) ?>/_old/css/sizes.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo($ukamConfig_live_site) ?>/_old/css/colors.css" />
 	<!--[if lte IE 6]>
 	<link rel="stylesheet" type="text/css" href="<?php echo($ukamConfig_live_site) ?>/css/ie.css" />
 	<![endif]-->
-	<script type="text/javascript" src="scripts/js/statistic.js"></script>
-	<script type="text/javascript" src="scripts/js/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/js/jcarousellite.js"></script>
-	<script type="text/javascript" src="scripts/js/common.js"></script>
+	<script type="text/javascript" src="_old/scripts/js/statistic.js"></script>
+	<script type="text/javascript" src="_old/scripts/js/jquery.min.js"></script>
+	<script type="text/javascript" src="_old/scripts/js/jcarousellite.js"></script>
+	<script type="text/javascript" src="_old/scripts/js/common.js"></script>
 </head>
 <body
 <?php 
