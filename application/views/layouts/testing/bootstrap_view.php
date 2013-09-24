@@ -1,5 +1,3 @@
-<div class="container">
-
   <div class="page-header" id="banner">
     <div class="row">
       <div class="col-lg-6">
@@ -1072,6 +1070,3 @@
     </div>
     
   </footer>
-
-
-</div>

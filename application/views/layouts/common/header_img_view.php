@@ -1,4 +1,7 @@
-<a href="{base_url}">
-  <img class="logoImage" alt="Ukramerica" src="{res_img}/ukramerica.png">
-</a>
-<img class="mainImage" alt="Main Image" src="{res_img}/america_watsmus.jpg">
+<div class="navbar-inverse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Active</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+</div>
+<!--<div class="navbar-inverse">-->

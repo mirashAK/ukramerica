@@ -1,57 +1,79 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="ie7 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="ie8 lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="ie9"> <![endif]-->
-<!--[if gt IE 9]><!-->
-<html>
-<!--<![endif]-->
+<html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Enotus - {site_title}</title>
+    <meta charset="utf-8" />
+    
+    <title>Ukramerica - {site_title}</title>
     <meta name="description" content="{site_metadata_description}" />
     <meta name="keywords" content="{site_metadata_keywords}" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <!-- css [ -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{res_css}/bootstrap.css" media="screen">
-    <link href="{res_css}/bootswatch.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{res_btsp}/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="{res_btsp}/css/bootstrap-responsive.css" media="screen">
     <link rel="stylesheet" href="{res_css}/main.css" media="all">
     <!-- ] css -->
     
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="{res_js}/vendor/html5shiv.js"></script>
-      <script src="{res_js}/vendor/respond.min.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
   </head>
 
-  <body> 
-      <!-- application [ -->
-      <div class="application">
-        {site_header} 
-      <!-- application content [ -->
-        <div class="app-content">
-            <div class="app-content-inner">
-                <div class="container">
-                  {breadcrumbs}
-                  {site_body}
-                </div><!--<div class="container">-->
-            </div><!--<div class="app-content-inner">-->
-        </div><!--<div class="app-content">-->
-        <!-- ] application content -->
+  <body class="main-page"> 
+  
+  
+    <div id="wrap">
+    
+        <div class="container long">
+            <div class="row relative">
+                <img alt="Main Image" src="{res_img}/america_watsmus.jpg" />
+                <a href="{base_url}" class="logo-image">
+                  <img alt="Ukramerica" src="{res_img}/ukramerica.png">
+                </a>
+            </div>
             
-      </div><!--<div class="application">-->
-      <!-- ] application -->
-      {site_footer} 
+            <div class="row">
+              <div class="">
+                {site_header}
+              </div>
+            </div>
+            
+            {breadcrumbs}
+
+            {site_body}
+
+        </div>
+        <!--<div class="container">-->
+
+        <div id="push"></div>
+
+    </div>
+    <!--<div id="wrap">-->
+
+    <div id="footer">
+        <div class="container">
+            {site_footer}
+        </div>
+        <!--<div class="container">-->
+    </div>
+    <!--<div id="footer">-->
       
         <!-- js [ -->
         <script type="text/javascript">var BASEURL = '{base_url}'; var SUBURL = '{sub_url}'; var LANG = '{lang}'; var BASEURLLANG = '{res_url}/{lang}/';</script>
         <script type="text/javascript" src="{res_js}/vendor/jquery.min.js"></script>
-        <script type="text/javascript" src="{res_js}/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{res_btsp}/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{res_btsp}/js/respond.min.js"></script>
         <script type="text/javascript" src="{res_js}/main.js"></script>
         <!-- ] js -->
+        
+        <?php //Custom scripts, added by add_script() function. Do not touch. ?>
+        {scripts}
+          {script}
+        {/scripts}
+        <?php //Custom scripts ?>
+        
     </body>
 </html>

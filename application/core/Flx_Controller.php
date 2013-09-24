@@ -91,6 +91,12 @@ class Default_Controller extends Flx_Controller
       $this->view_data['base_url'] = base_url();
       $this->view_data['sub_url'] = sub_url();
       $this->view_data['res_url'] = res_url();
+      
+      $this->view_data['res_js'] = res_url('assets/js/');
+      $this->view_data['res_css'] = res_url('assets/css/');
+      $this->view_data['res_img'] = res_url('assets/img/');
+      
+      $this->view_data['res_btsp'] = res_url('assets/bootstrap/');
     }
 }
 
@@ -105,6 +111,12 @@ class Test_Controller extends Flx_Controller
       $this->view_data['base_url'] = base_url();
       $this->view_data['sub_url'] = sub_url();
       $this->view_data['res_url'] = res_url();
+      
+      $this->view_data['res_js'] = res_url('assets/js/');
+      $this->view_data['res_css'] = res_url('assets/css/');
+      $this->view_data['res_img'] = res_url('assets/img/');
+      
+      $this->view_data['res_btsp'] = res_url('assets/bootstrap/');
      }
 }
 
@@ -141,14 +153,10 @@ class Front_Controller extends Default_Controller
       $this->view_data['site_metadata_description'] = '';
       $this->view_data['site_metadata_keywords'] = '';
       
-      $this->view_data['site_header'] = '';
-      $this->view_data['site_footer'] =  '';
-      $this->view_data['site_body'] = '';
+//       $this->view_data['site_header'] = '';
+//       $this->view_data['site_footer'] =  '';
+//       $this->view_data['site_body'] = '';
       $this->view_data['breadcrumbs'] = '';
-      
-      $this->view_data['res_js'] = res_url('assets/js/');
-      $this->view_data['res_css'] = res_url('assets/css/');
-      $this->view_data['res_img'] = res_url('assets/img/');
     }
 }
 
