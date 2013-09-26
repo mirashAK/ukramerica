@@ -1,7 +1,8 @@
 html, body { height: 100%; background-color: #EEEEEE; margin:0px; padding:0px; }
 
 .wrapper {width: 995px; margin: 0 auto; background-color: #FFFFFF; min-height: 100%; height:auto !important; height:100%; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-.footer {height: 90px; width: 995px; margin: 0 auto; margin-top: -90px; background-color: #CCCCCC;}
+.footer {height: 90px; width: 995px; margin: 0 auto; margin-top: -90px; background-color: #CCCCCC; padding: 25px;}
+.content {padding: 20px;}
 .pusher {height: 90px; }
 .relative {position: relative;}
 .logo-image { height: 56px; left: 570px; position: absolute; top: 140px; width: 420px; }
