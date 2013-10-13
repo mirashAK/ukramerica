@@ -153,9 +153,9 @@ class Front_Controller extends Default_Controller
       $this->view_data['site_metadata_description'] = '';
       $this->view_data['site_metadata_keywords'] = '';
       
-//       $this->view_data['site_header'] = '';
-//       $this->view_data['site_footer'] =  '';
-//       $this->view_data['site_body'] = '';
+      $this->view_data['site_header'] = '';
+      $this->view_data['site_footer'] =  '';
+      $this->view_data['site_body'] = '';
       $this->view_data['breadcrumbs'] = '';
     }
 }
